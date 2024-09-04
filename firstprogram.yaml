@@ -1,7 +1,8 @@
+---
 -name: play-01
 hosts: local
 connection: local
 tasks:
   -name: print some info
-   debug:
-     msg: "This is ravi first program"
+  debug:
+    msg: "This is ravi first program"
