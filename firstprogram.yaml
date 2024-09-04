@@ -11,12 +11,4 @@
     debug:
       msg: "This is ravi second program"
 
-  - name: install mysql
-    package:
-      name: "{{ item }}"
-      state: present
-    loops:
-      - nginx
-      - mysql
-
 
