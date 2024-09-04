@@ -2,6 +2,6 @@
 hosts: local
 connection: local
 tasks:
-  -name: print some info
-  debug:
-    msg: "This is ravi first program"
+  - name: print some info
+    debug:
+      msg: "This is ravi first program"
