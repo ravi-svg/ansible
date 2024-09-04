@@ -5,3 +5,13 @@
   - name: print some info
     debug:
       msg: "This is ravi first program"
+
+  - name: install mysql
+    package:
+      name: "{{ item }}"
+      state: present
+    loops:
+      - nginx
+      - mysql
+
+
