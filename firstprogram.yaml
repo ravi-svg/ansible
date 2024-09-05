@@ -7,7 +7,7 @@
       package:
         name: "{{ item }}"
         state: present
-      loops:
+      loop:
         - nginx
 
 
