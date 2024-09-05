@@ -1,7 +1,8 @@
 - name: play-01
   hosts: local
   connection: local
-  
+  become: yes
+  become_user: root
   tasks:
     - name: install mysql service
       package:
