@@ -5,7 +5,7 @@
   tasks:
     - name: install mysql service
       package:
-        name: {{item}}
+        name: {{ item }}
         state: present
       loops:
         - nginx
