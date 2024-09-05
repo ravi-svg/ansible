@@ -1,10 +1,10 @@
 - name: play-01
   hosts: local
   connection: local
-  become: yes
+  
   tasks:
     - name: install mysql service
-      dnf:
+      package:
         name: "{{ item }}"
         state: present
       loop:
