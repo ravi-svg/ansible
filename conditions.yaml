@@ -1,0 +1,8 @@
+- name: play-01
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: check user exist or not
+      command: id expense
+      register: user
