@@ -1,0 +1,11 @@
+- name: play-01
+  hosts: local
+  connection: local
+  become: yes
+  vars_files:
+    - vars.yaml
+  tasks:
+    - name: variables from files
+      debug:
+        msg:
+          "This is from var files {{ COURSE }}"
