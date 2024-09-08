@@ -12,7 +12,7 @@
     - name: restart the nginx
       service:
         name: nginx
-        state: start
+        state: started
 
 
 
