@@ -6,3 +6,8 @@
     - name: check user exist or not
       command: id expense
       register: user
+      ignore_errors: true
+
+    - name: create expense user
+      command: useradd expense
+      when: user.rc != 0
