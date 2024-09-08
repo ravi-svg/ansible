@@ -19,5 +19,5 @@
   tasks:
     - name: print the course info
       debug:
-        msg: "Hi am learning {{ course }} with duartion {{ duration }}, topics are {{ topics}}
-              , and live {{ live }} and tools are {{ tools }}"
+        msg: "Hi am learning {{ course }} with duartion {{ duration }}, topics are {{ topics[0]}}
+              , and live {{ live }} and tools are {{ tools[ci] }}"
