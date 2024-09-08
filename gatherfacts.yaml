@@ -6,3 +6,14 @@
     - name: print the facts
       debug:
         msg: "facts are {{ ansible_facts }}"
+    - name: install nginx on redhat
+      dnf:
+        name: nginx
+        state: present
+      when: os_family == "RedHat"
+
+    - name: install nginx on redhat
+      dnf:
+        name: nginx
+        state: present
+      when: os_family == "ubanto"
