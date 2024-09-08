@@ -1,0 +1,23 @@
+- name: play-01
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    course: "Devops with AWS"
+    duration: 120
+    topics:
+      - Linux
+      - Shell
+      - Ansible
+      - Terraform
+      - AWS
+      - k8
+    Live: true
+    tools:
+      ci: jenkins
+      cm: ansible
+  tasks:
+    - name: print the course info
+      debug:
+        msg: "Hi am learning {{ course }} with duartion {{ duration }}, topics are {{ topics}}
+              , and live {{ live }} and tools are {{ tools }}"
