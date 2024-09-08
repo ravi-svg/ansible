@@ -7,8 +7,12 @@
       package:
         name: "{{ item }}"
         state: present
-        enable: yes
       loop:
         - nginx
+    - name: restart the nginx
+      service:
+        name: nginx
+        state: start
+
 
 
